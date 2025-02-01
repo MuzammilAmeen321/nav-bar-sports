@@ -1,0 +1,228 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 10px;
+    height: 70px;
+}
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 16px;
+    margin-right: 15px;
+}
+.navbar-nav .nav-link:hover {
+    color: yellow !important;
+}
+.profile-logout {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+.profile-logout i {
+    margin-right: 2px;
+    color: rgb(227, 225, 216);
+}
+.profile-logout i:hover {
+    color: rgb(243, 243, 19);
+}
+.search-section {
+    background-image: url('./image/image-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.highlight {
+    color: yellow;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    top: -10px;
+}
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.search-btn, .category-btn {
+    background-color: yellow;
+   padding: 14px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.category-btn{
+    padding: 12px;
+}
+
+.custom-select-container {
+    width: 250px;
+    position: relative;
+}
+
+/* Cards Section Styling */
+.cards-section {
+    padding: 50px 0;
+    background-color: black;
+    background-image: url(./image/image-bg-2.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 3px;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    height: 250px;
+    width: 220px;
+    margin: 10px;
+}
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    background-color: yellow;
+    color: black;
+}
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+.card-body {
+    text-align: center;
+    margin-top: auto;
+}
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.card-text {
+    font-size: 12px;
+    color: gray;
+}
+.game{
+    color: yellow;
+}
+.location-btn {
+background-color: white;
+width: 90px;
+justify-content: center;
+height: 50px;
+color: black;
+padding: 8px 15px;
+border-radius: 10px;
+display: block;
+margin: 10px auto;
+font-size: 14px;
+cursor: pointer;
+/* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+.location-btn:hover {
+background-color: yellow;
+/* color:; */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 767px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-nav .nav-link {
+        margin: 10px 0;
+    }
+    .card {
+        height: 300px;
+    }
+    .search-container {
+        flex-direction: column; /* Stacked vertically for smaller screens */
+        align-items: center;
+    }
+    .container{
+        border: 2px solid red;
+    }
+
+    /* end */
+    .custom-section {
+        background-color: black;
+        padding: 50px 0;
+        color: white;
+     
+      }
+      .card {
+        
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        height: 450px; /* Shortened card height */
+      }
+      .card-body {
+        text-align: center;
+      }
+      .card-title {
+        font-size: 1.25rem;
+        margin-top: 15px;
+      }
+      .card-text {
+        font-size: 1rem;
+        color: #ddd;
+      }
+      .card-icon {
+        font-size: 40px;
+        margin-top: 20px;
+        color: #007bff;
+      }
+}
+
